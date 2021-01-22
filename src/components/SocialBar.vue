@@ -7,11 +7,6 @@
         </a>
       </li>
       <li>
-        <a :href="links.metadata.instagram" target="_blank">
-          <font-awesome-icon class="icon" :icon="['fab', 'instagram-square']" />
-        </a>
-      </li>
-      <li>
         <a :href="links.metadata.linkedin" target="_blank">
           <font-awesome-icon class="icon" :icon="['fab', 'linkedin']" />
         </a>
