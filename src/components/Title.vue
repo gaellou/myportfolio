@@ -5,6 +5,7 @@
         <div class="text-wrapper">{{ description }}</div>
       </div>
     </div>
+    
 </template>
 
 <script>
@@ -16,6 +17,7 @@
     ]
   }
 </script>
+
 
 <style scoped lang="scss">
   @import '@/styles/constants.scss';

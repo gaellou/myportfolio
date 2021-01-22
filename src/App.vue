@@ -21,6 +21,7 @@ import Projects from "./components/Projects.vue";
 
 import { bucket } from "./cosmic.js";
 
+
 export default {
   name: "App",
   components: {
