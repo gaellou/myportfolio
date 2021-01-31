@@ -4,28 +4,15 @@
     
     <div class="name">
       <div class="wrapper-name">
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
          <AnimateOnVisible name="fadeDown" :duration="1">
             <div class="section-content">
                 <div class="container-fluid">
-                    <div class="row justify-content-center photo">
-=======
-         <AnimateOnVisible name="fadeDown" :duration="1">
-            <div class="section-content">
-                <div class="container-fluid">
-                    <div class="row justify-content-center">
->>>>>>> V2
+                    <div class="row justify-content-center hoto">
                         <Photo :user="user"/>
                     </div>
                 </div>
             </div>
          </AnimateOnVisible>
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> V2
         <AnimateOnVisible name="fadeDown" ::duration="1">
           <h1>{{ user.name }}</h1>
         </AnimateOnVisible>
@@ -68,17 +55,6 @@ export default {
   height: 100%;
 }
 
-.photo{
-  border-width: 3px;
-  border-style: solid;
-  border-image: 
-    linear-gradient(
-      to bottom, 
-      #DE6100, 
-      rgba(0, 0, 0, 0)
-    ) 1 100%;
-}
-
 .name {
   display: flex;
   justify-content: center;
@@ -108,7 +84,7 @@ export default {
   }
 
   hr {
-    border: 1px solid #DE6100;
+    border: 1px solid whitesmoke;
   }
 }
 
