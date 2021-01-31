@@ -6,12 +6,12 @@
 </template>
 
 <script>
-import SocialBar from './SocialBar'
+
 export default {
   name: 'Footer',
   props: ['user', 'links'],
   components: {
-    SocialBar,
+
   },
 }
 </script>

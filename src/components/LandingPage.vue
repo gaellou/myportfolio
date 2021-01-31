@@ -15,7 +15,9 @@
 </template>
 
 <script>
+
 export default {
+  
   name: "LandingPage",
   props: ["user"]
 };
@@ -32,7 +34,7 @@ export default {
 }
 
 .parallax {
-  background-color : black;
+  background-color : rgba(0, 0, 0, 0.226);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

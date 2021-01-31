@@ -8,7 +8,7 @@
             <div class="section-content">
                 <div class="container-fluid">
                     <div class="row justify-content-center">
-                        <Photo :user="user"/>
+                       
                     </div>
                     <div class="row">
                         <div class="col-md-7 mr-auto card-mobile">
@@ -25,19 +25,19 @@
 </template>
 
 <script>
-    import Title from './Title.vue'
+   // import Title from './Title.vue'
     import PersonnalCard from './PersonnalCard.vue'
     import Presentation from './Presentation.vue'
-    import Photo from './Photo.vue'
+    //import Photo from './Photo.vue'
 
     export default {
         name: 'AboutMe',
         props: ['user', 'content', 'links'],
         components: {
-            Title,
+            
             PersonnalCard,
             Presentation,
-            Photo
+           
         },
     }
 </script>
