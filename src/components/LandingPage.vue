@@ -7,7 +7,7 @@
          <AnimateOnVisible name="fadeDown" :duration="1">
             <div class="section-content">
                 <div class="container-fluid">
-                    <div class="row justify-content-center hoto">
+                    <div class="row justify-content-center photo">
                         <Photo :user="user"/>
                     </div>
                 </div>
@@ -67,6 +67,14 @@ export default {
   .wrapper-name {
     width: 250px;
   }
+  .photo{border-width: 3px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      #DE6100, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;}
 
   h1 {
     font-size: 2.3rem;
@@ -84,7 +92,7 @@ export default {
   }
 
   hr {
-    border: 1px solid whitesmoke;
+    border: 1px solid #DE6100;
   }
 }
 
