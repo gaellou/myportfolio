@@ -41,11 +41,11 @@ export default {
 $linear: map-get($colors, dark);
 
 #experience {
-  background-color: lighten(map-get($colors, primary), 5%);
+  background-color:none ;
 }
 
 .title {
-  color: map-get($colors, light);
+  color: white;
 }
 
 .row {

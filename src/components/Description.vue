@@ -7,9 +7,7 @@
         <AnimateOnVisible name="fadeRight" :duration="1">
             <div class="section-content">
                 <div class="container-fluid">
-                    <div class="row justify-content-center">
-                       
-                    </div>
+                    
                     <div class="row">
                         <div class="col-md-7 mr-auto card-mobile">
                             <Presentation :content="content"/>

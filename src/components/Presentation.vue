@@ -17,9 +17,9 @@ export default {
     @import '@/styles/constants.scss';
 
     .paragraph {
-        color: map-get($colors, primary);
+        color: white;
         .begin {
-            color: map-get($colors, secondary);
+            color: white;
         }
     }
 </style>

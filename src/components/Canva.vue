@@ -33,11 +33,18 @@ export default {
       document.body.appendChild(this.renderer.domElement)
 
       const geometry = new THREE.BoxGeometry(1, 1, 1)
-      const material = new THREE.MeshBasicMaterial({ color: 0xFF5733  })
-      this.cube = new THREE.Mesh(geometry, material)
-      this.scene.add(this.cube)
+      const material = new THREE.MeshBasicMaterial({ color: 0xDE6100  })
+      this.cube1 = new THREE.Mesh(geometry, material)
+      this.scene.add(this.cube1)
       
-      this.cube.position.x+=5
+      
+    this.cube2 = new THREE.Mesh(geometry, material)
+    this.scene.add(this.cube2)
+      
+      
+      this.cube2.position.x-=5
+
+      this.cube1.position.x+=5
       this.camera.position.z = 5
 
       
@@ -45,8 +52,10 @@ export default {
     animate: function() {
       requestAnimationFrame(this.animate)
 
-      this.cube.rotation.x += 0.01
-      this.cube.rotation.y += 0.01
+      this.cube1.rotation.x += 0.01
+      this.cube1.rotation.y += 0.01
+      this.cube2.rotation.x += 0.02
+      this.cube2.rotation.y += 0.01
 
       this.renderer.render(this.scene, this.camera)
     }
