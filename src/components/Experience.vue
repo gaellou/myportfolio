@@ -1,12 +1,6 @@
 <template>
   <section id="experience">
-    <AnimateOnVisible name="fadeDown" :duration="1">
-      <Title
-        class="title"
-        :title="content.metadata.title"
-        :description="content.metadata.description"
-      />
-    </AnimateOnVisible>
+    
 
 	<AnimateOnVisible name="fadeUp" :duration="1">
 		<div class="container-fluid">
@@ -28,14 +22,14 @@
 </template>
 
 <script>
-import Title from "./Title.vue";
+//import Title from "./Title.vue";
 import ExperienceColumn from "./ExperienceColumn.vue";
 
 export default {
   name: "Experience",
   props: ["content"],
   components: {
-    Title,
+   
     ExperienceColumn
   }
 };
@@ -47,11 +41,11 @@ export default {
 $linear: map-get($colors, dark);
 
 #experience {
-  background-color: lighten(map-get($colors, primary), 5%);
+  background-color:none ;
 }
 
 .title {
-  color: map-get($colors, light);
+  color: white;
 }
 
 .row {

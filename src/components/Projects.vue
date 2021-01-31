@@ -4,8 +4,8 @@
 		<Title
 		class="title"
 		:title="content.metadata.title"
-		:description="content.metadata.description"
-		/>
+		:description="content.metadata.description"/>
+    
     </AnimateOnVisible>
 
     <div class="container-fluid center-block">
@@ -37,6 +37,9 @@ export default {
     Title
   },
   methods: {
+     redirectToGallery() {
+      this.$router.push({ path: '/Photos' });
+    },
     getImgUrl(img) {
       if(img == undefined || img == "")
         return ""
@@ -50,6 +53,15 @@ export default {
 @import "@/styles/constants.scss";
 
 $linear: map-get($colors, dark);
+
+#myButton {
+  margin-left : 39%;
+  margin-right : auto;
+  background-color : #FF5733 ;
+  border-radius: 10px;
+  font-size : 2em;
+  border : 0;
+}
 
 #projects {
   background-color: lighten(map-get($colors, primary), 5%);

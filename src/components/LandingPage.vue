@@ -1,19 +1,31 @@
  <template>
+  
   <header class="header parallax">
+    
     <div class="name">
       <div class="wrapper-name">
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
          <AnimateOnVisible name="fadeDown" :duration="1">
             <div class="section-content">
                 <div class="container-fluid">
                     <div class="row justify-content-center photo">
+=======
+         <AnimateOnVisible name="fadeDown" :duration="1">
+            <div class="section-content">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+>>>>>>> V2
                         <Photo :user="user"/>
                     </div>
                 </div>
             </div>
          </AnimateOnVisible>
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> V2
         <AnimateOnVisible name="fadeDown" ::duration="1">
           <h1>{{ user.name }}</h1>
         </AnimateOnVisible>
@@ -27,9 +39,13 @@
 </template>
 
 <script>
+ import Photo from './Photo.vue'
 export default {
+  
   name: "LandingPage",
-  props: ["user"]
+  props: ["user"],
+  components: {
+            Photo}
 };
 </script>
 
@@ -44,7 +60,7 @@ export default {
 }
 
 .parallax {
-  background-color : black;
+  background-image : url('../assets/img/bg.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

@@ -1,11 +1,14 @@
 <template>
   <transition name="fade" tag="div" class="wrapper" mode="out-in">
     <div class="wrapper" v-if="isLoaded" id="app">
-      <LandingPage :user="user" />
+      <LandingPage :user="user"/>
+      <Canva /> 
       <Description :user="user" :content="findSlug('description')" :links="findSlug('links')" />
       <Experience :content="findSlug('experiences')" />
       <Skills :content="findSlug('skills')" />
+      
       <Projects :content="findSlug('projects')" />
+
       
     </div>
   </transition>
@@ -17,20 +20,16 @@ import Description from "./components/Description.vue";
 import Experience from "./components/Experience.vue";
 import Skills from "./components/Skills.vue";
 import Projects from "./components/Projects.vue";
-
-
+import Canva from "./components/Canva.vue";
 import { bucket } from "./cosmic.js";
-
-
 export default {
   name: "App",
   components: {
-    LandingPage,
+    LandingPage,Canva,
     Description,
     Experience,
     Skills,
     Projects,
-
   },
   data: () => ({
     isLoaded: false,
@@ -89,14 +88,12 @@ export default {
 
 <style scoped lang="scss">
 @import "@/styles/constants.scss";
-
 #app {
   font-family: Montserrat-Regular, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
-
 .wrapper {
   height: 100%;
 }
