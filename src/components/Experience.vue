@@ -1,6 +1,6 @@
 <template>
   <section id="experience">
-    
+   
 
 	<AnimateOnVisible name="fadeUp" :duration="1">
 		<div class="container-fluid">
@@ -41,11 +41,12 @@ export default {
 $linear: map-get($colors, dark);
 
 #experience {
-  background-color:none ;
+  background-color:black ;
 }
 
 .title {
   color: white;
+  background-color: black;
 }
 
 .row {
@@ -76,6 +77,7 @@ $linear: map-get($colors, dark);
     width   : 60%;  /* or 100px */
     border-bottom:2px solid $linear;
 }
+.experience{background-color: black;}
 }
 
 /deep/ .text-wrapper {

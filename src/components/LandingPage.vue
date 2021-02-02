@@ -4,7 +4,7 @@
     
     <div class="name">
       <div class="wrapper-name">
-         <AnimateOnVisible name="fadeDown" :duration="1">
+         <AnimateOnVisible name="fadeDown" :duration="2">
             <div class="section-content">
                 <div class="container-fluid">
                     <div class="row justify-content-center photo">

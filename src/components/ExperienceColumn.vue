@@ -23,7 +23,7 @@ export default {
 
 .resume-item {
   margin-bottom: 25px;
-  p {
+  p {background-color : black;
     font-size: 1.5rem;
     margin-top: 0;
   }
