@@ -2,7 +2,7 @@
   <transition name="fade" tag="div" class="wrapper" mode="out-in">
     <div class="wrapper" v-if="isLoaded" id="app">
       <LandingPage :user="user"/>
-      <Canva /> 
+      <Canva  class="3d" /> 
       <Description :user="user" :content="findSlug('description')" :links="findSlug('links')" />
       <Experience :content="findSlug('experiences')" />
       <Skills :content="findSlug('skills')" />
@@ -36,6 +36,7 @@ export default {
     user: {},
     posts: [],
   }),
+ //récupération des données
   methods: {
     fetchPosts() {
       return bucket.getObjects({
@@ -93,6 +94,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+}
+@media (max-width: #{map-get($breakpoints, small)}) {
+  #3d{display : none;}
 }
 .wrapper {
   height: 100%;
