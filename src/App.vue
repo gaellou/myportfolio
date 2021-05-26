@@ -1,15 +1,13 @@
 <template>
   <transition name="fade" tag="div" class="wrapper" mode="out-in">
     <div class="wrapper" v-if="isLoaded" id="app">
-      <LandingPage :user="user"/>
-      <Canva  class="3d" /> 
+      <LandingPage :user="user"/>  
+      <Canva  class="" >
+      <div class="iframe"><iframe src="https://immersion-popculture.netlify.app/"></iframe></div></Canva>
       <Description :user="user" :content="findSlug('description')" :links="findSlug('links')" />
       <Experience :content="findSlug('experiences')" />
-      <Skills :content="findSlug('skills')" />
-      
-      <Projects :content="findSlug('projects')" />
-
-      
+      <Skills :content="findSlug('skills')" />     
+      <Projects :content="findSlug('projects')" />      
     </div>
   </transition>
 </template>
@@ -101,4 +99,7 @@ export default {
 .wrapper {
   height: 100%;
 }
+#iframe{height : 100%;}
+iframe{height : 100%;
+width : 100%;}
 </style>

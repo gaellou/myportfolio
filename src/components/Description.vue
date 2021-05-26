@@ -44,7 +44,11 @@
     @import '@/styles/constants.scss';
 
     #about {
-        background-color: lighten(map-get($colors, dark), 100%);
+        background-color: rgba(0, 0, 0, 0.5);
+        
+    }
+    .about {
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     @media(min-width: #{map-get($breakpoints, medium)}) {

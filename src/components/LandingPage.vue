@@ -1,7 +1,6 @@
  <template>
   
   <header class="header parallax">
-    
     <div class="name">
       <div class="wrapper-name">
          <AnimateOnVisible name="fadeDown" :duration="2">
@@ -21,7 +20,9 @@
           <p>{{ user.status }}</p>
         </AnimateOnVisible>
       </div>
+      
     </div>
+    
   </header>
 </template>
 
@@ -43,6 +44,7 @@ export default {
 
 .header {
   padding: 20px;
+  
   background-color: map-get($colors, dark);
 }
 
@@ -129,4 +131,5 @@ export default {
     background-attachment: scroll;
   }
 }
+
 </style>

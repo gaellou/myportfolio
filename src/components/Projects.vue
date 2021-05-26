@@ -37,7 +37,8 @@ export default {
     Title
   },
   methods: {
-     redirectToGallery() {
+//essais de route non terminé
+redirectToGallery() {
       this.$router.push({ path: '/Photos' });
     },
     getImgUrl(img) {
